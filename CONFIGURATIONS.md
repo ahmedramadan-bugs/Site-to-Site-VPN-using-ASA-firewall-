@@ -1,7 +1,7 @@
 # Device Configurations
 
 Full copy-paste configuration for every device in the lab.
-Paste in small batches and verify the object-groups before the NAT section.
+
 
 Apply order: routers and IOU switches first, then the ASAs.
 
