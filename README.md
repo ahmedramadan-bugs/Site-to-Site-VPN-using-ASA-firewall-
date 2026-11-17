@@ -50,9 +50,12 @@ The full configs are in [CONFIGURATIONS.md](CONFIGURATIONS.md). Start the router
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/69a36ff4-8569-4d5c-bac1-0744efd23430" />
 
+
+
 **PC1 reaches every other VLAN.** The first few pings time out while the tunnel comes up, then everything replies.
 
 <img width="803" height="779" alt="image" src="https://github.com/user-attachments/assets/7600aac6-f58a-4f21-88ff-12adbdb8ac9b" />
+
 
 
 **The encrypted packet counters go up with traffic, with no errors.**
@@ -60,9 +63,11 @@ The full configs are in [CONFIGURATIONS.md](CONFIGURATIONS.md). Start the router
 <img width="990" height="668" alt="image" src="https://github.com/user-attachments/assets/1732063a-df61-4a47-abc8-67dcaf2485cf" />
 
 
+
 **The ISP only sees ESP.** A capture on the ISP to HQ link shows no ICMP at all, just encrypted packets between the firewalls.
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b384aabb-d7f2-4814-9313-8a5b5f5dcab8" />
+
 
 **The internal networks stay hidden.** The ISP's routing table only has the public 11.x.x.x networks, and Internet access from the PCs still works through NAT.
 
@@ -77,7 +82,7 @@ This is a lab. IKEv1 with DH group 5 is outdated, and a real deployment should u
 
 ## Credits
 
-Original lab by Eng. Abeer Hosni (CCNP SCOR, 2020). She also explains it in these videos:
+Original lab by Eng. Abeer Hosni (CCNP SCOR, 2020). explained in these videos:
 
 - https://www.youtube.com/watch?v=l507qFmetUU
 - https://www.youtube.com/watch?v=fNNghq9IfgU
