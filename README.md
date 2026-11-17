@@ -4,7 +4,7 @@ I built a full-mesh IPsec VPN between three Cisco ASAv firewalls in GNS3: HQ, B1
 
 The lab comes from Eng. Abeer Hosni's CCNP SCOR material. It covers one tunnel between two sites, so I took it further.
 
-![Topology](screenshots/topology.png)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/caab9244-eca0-4c41-aee9-8939b0295900" />
 
 ## What I did
 
@@ -48,23 +48,28 @@ The full configs are in [CONFIGURATIONS.md](CONFIGURATIONS.md). Start the router
 
 **All three firewalls have two active IKE tunnels, one per peer.**
 
-![IKEv1 SAs](screenshots/ikev1-sa.png)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/69a36ff4-8569-4d5c-bac1-0744efd23430" />
 
 **PC1 reaches every other VLAN.** The first few pings time out while the tunnel comes up, then everything replies.
 
-![Ping from PC1](screenshots/ping-pc1.png)
+<img width="803" height="779" alt="image" src="https://github.com/user-attachments/assets/7600aac6-f58a-4f21-88ff-12adbdb8ac9b" />
+
 
 **The encrypted packet counters go up with traffic, with no errors.**
 
-![IPsec SA](screenshots/ipsec-sa.png)
+<img width="990" height="668" alt="image" src="https://github.com/user-attachments/assets/1732063a-df61-4a47-abc8-67dcaf2485cf" />
+
 
 **The ISP only sees ESP.** A capture on the ISP to HQ link shows no ICMP at all, just encrypted packets between the firewalls.
 
-![Wireshark capture](screenshots/wireshark-esp.png)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b384aabb-d7f2-4814-9313-8a5b5f5dcab8" />
 
 **The internal networks stay hidden.** The ISP's routing table only has the public 11.x.x.x networks, and Internet access from the PCs still works through NAT.
 
-![ISP routing table and PC6 tests](screenshots/isp-route-pc6.png)
+<img width="951" height="650" alt="image" src="https://github.com/user-attachments/assets/3d84dce5-0564-4db7-bfc0-822e700fc799" />
+
+<img width="1139" height="489" alt="image" src="https://github.com/user-attachments/assets/cd21dac6-ac2b-4b32-a00b-15e73c8d1bc8" />
+
 
 ## Good to know
 
