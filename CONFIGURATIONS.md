@@ -1,6 +1,6 @@
 # Device Configurations
 
-Full copy-paste configuration for every device in the lab.
+Full configuration for every device in the lab.
 
 
 Apply order: routers and IOU switches first, then the ASAs.
